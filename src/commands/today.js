@@ -15,8 +15,9 @@ module.exports = {
     const $ = cheerio.load(response);
     const donation_in_dollars = $(".widget-title").text() + ".00";
 
-    const embed = new EmbedBuilder()
+    const Monday_embed = new EmbedBuilder()
     .setColor(Colors.White)
+    .setTitle("Monday 12/5 — Wumpus’ Fishing Village")
     .setTimestamp()
     .setImage("https://cdn.discordapp.com/attachments/1044405873067438210/1044408060032073818/Snowsgiving2022_Fishing.png")
     .setDescription(
@@ -31,6 +32,24 @@ The more you fish, the more prizes you can catch.
 :wum_love: Support Crisis Text Line when you shop exclusive Snowsgiving merch. We're up to ${donation_in_dollars} in donations! [Visit Merch Store](https://discordmerch.com/collections/snowsgiving-2022)
 
 `)
-interaction.editReply({ embeds: [embed] })
+
+const Tuesday_embed = new EmbedBuilder()
+.setColor(Colors.White)
+.setTitle("Tuesday 12/6 — Oh ho ho, Holiday Activities")
+.setTimestamp()
+.setImage("https://cdn.discordapp.com/attachments/1044405873067438210/1044410030688055367/Snowsgiving2022_Pattern.png")
+.setDescription(
+`
+Tis the season for (Snows)giving, and we’re dropping snowy Activities just for fun! (not a Quest)
+
+:snowsgiving2022_bobbleleague: **Bobble League (on Ice!)** is now available to everyone.
+For our :nitro: Nitro subscribers, you can also enjoy **Chess or Checkers** and **Sketch Heads** with a snowy theme.
+
+Pop into any voice channel and hit the :rocket: to check them out.
+
+:wum_love: Support Crisis Text Line when you shop exclusive Snowsgiving merch. We're up to ${donation_in_dollars} in donations! [Visit Merch Store](https://discordmerch.com/collections/snowsgiving-2022)
+`)
+
+interaction.editReply({ embeds: [Tuesday_embed] })
   },
 };
