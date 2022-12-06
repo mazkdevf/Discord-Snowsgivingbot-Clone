@@ -16,4 +16,7 @@
 DISCORD_TOKEN = ""
 ```
 
+### Reminder
+> All images and emojis are NOT made by me.
+
 Happy Snowsgiving and Happy Christmas waiting!
