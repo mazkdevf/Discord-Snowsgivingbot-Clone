@@ -68,4 +68,3 @@ Fishing item log: ${item_log} [0/10]`;
         interaction.editReply({ embeds: [embed] })
     },
 };
-A
