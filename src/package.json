@@ -15,9 +15,11 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/rest": "^1.0.0",
+    "cheerio": "^1.0.0-rc.12",
     "discord-api-types": "^0.36.2",
     "discord.js": "^14.3.0",
     "dotenv": "^16.0.3",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.7"
   }
 }
